@@ -10,6 +10,10 @@ const player ={
     },
     init:()=>{//初始化
         player.ui.demo1.innerText = string.substr(0,player.n)
+
+        let style = document.createElement('style')
+        player.ui.demo2.appendChild(style)
+        player.ui.demo2 = style
         player.ui.demo2.innerHTML = string.substr(0,player.n)
         player.play()
         player.bindEvents()
